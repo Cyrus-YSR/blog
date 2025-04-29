@@ -6,6 +6,7 @@ import 'highlight.js/styles/github.css';
 import { DOCUMENTS } from '@/data/docs'; // 导入配置
 import { ClipboardDocumentIcon } from '@heroicons/react/24/outline';
 
+
 // 创建复制按钮组件
 const CopyButton = ({ codeContent }) => {
     const [copied, setCopied] = useState(false);

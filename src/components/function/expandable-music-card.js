@@ -192,7 +192,7 @@ export default function ExpandableCardDemo() {
                     >
                         <div className="flex gap-4 flex-col w-full">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
-                                <Image
+                                <img
                                     width={100}
                                     height={100}
                                     src={card.src || "/placeholder.svg"}
@@ -261,7 +261,7 @@ const cards = [
     {
         description: "2000年发行",
         title: "Jay",
-        src: "./jay.jpeg?height=300&width=300",
+        src: "./jay.png?height=300&width=300",
         audioSrc: "/jay.mp3", // 替换为实际音频文件
         content: () => {
             return (
