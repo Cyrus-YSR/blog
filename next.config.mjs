@@ -13,7 +13,7 @@ const nextConfig = {
     allowedDevOrigins: ['local-origin.dev', '*.local-origin.dev','172.23.0.1'],
     transpilePackages: ['framer-motion'],
     reactStrictMode: true,
-    output: 'export',
+    
     // swcMinify: true,
 };
 
