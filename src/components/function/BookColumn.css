@@ -1,0 +1,114 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 书本容器样式 */
+.book-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* 单个书本样式 */
+.book {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+    perspective: 1500px;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 书本封面样式 */
+.book-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    cursor: pointer;
+    z-index: 2;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+/* 书本 3D 展示样式 */
+.book-3d {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #334155;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    z-index: 1;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+.book-3d img {
+    max-width: 80%;
+    max-height: 60%;
+}
+
+.book-info {
+    text-align: center;
+}
+
+.book-info h3 {
+    margin: 0;
+}
+
+.book-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.view-link {
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 2px;
+}
+
+/* 书本背面样式（介绍信息） */
+.book-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+/* 鼠标悬浮时书本旋转效果 */
+.book:hover.book-cover {
+    transform: rotateY(180deg);
+}
+
+.book:hover.book-3d {
+    transform: rotateY(0deg);
+}

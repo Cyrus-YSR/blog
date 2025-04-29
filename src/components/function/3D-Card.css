@@ -1,0 +1,45 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fade-in-char {
+    display: inline-block;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+/* 在3D-Card.css添加 */
+/* 3D-Card.css 修正 */
+.progress-trigger {
+    --progress-color: orange;
+    isolation: isolate; /* 新建层叠上下文 */
+}
+
+.progress-trigger::after {
+    content: '';
+    position: absolute;
+    top: 0; /* 修改定位点 */
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right,
+    var(--progress-color) 50%,
+    rgba(255,165,0,0.2) 100%); /* 添加渐变效果 */
+    z-index: -1;
+    transition: width 2s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: left center; /* 优化动画方向 */
+}
+
+/* 添加初始化状态 */
+.progress-trigger.animate-progress::after {
+    width: 100% !important;
+}
+
