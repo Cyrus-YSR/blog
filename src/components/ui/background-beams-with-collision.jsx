@@ -14,7 +14,7 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 10,
       translateX: 10,
-      translateY:"7465px",
+      translateY:"7610px",
       duration: 7,
       repeatDelay: 3,
       delay: 2,
@@ -22,7 +22,7 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 600,
       translateX: 600,
-      translateY:"7465px",
+      translateY:"7610px",
       duration: 7,
       repeatDelay: 3,
       delay: 4,
@@ -30,7 +30,7 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 100,
       translateX: 100,
-      translateY:"7465px",
+      translateY:"7610px",
       duration: 7,
       repeatDelay: 3,
       delay: 2,
@@ -39,7 +39,7 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 400,
       translateX: 400,
-      translateY:"7465px",
+      translateY:"7610px",
       duration: 5,
       repeatDelay: 14,
       delay: 4,
@@ -47,7 +47,7 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 800,
       translateX: 800,
-      translateY:"7465px",
+      translateY:"7610px",
       duration: 11,
       repeatDelay: 2,
       className: "h-20",
@@ -55,7 +55,7 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 1000,
       translateX: 1000,
-      translateY:"7465px",
+      translateY:"7610px",
       duration: 7,
       repeatDelay: 2,
       className: "h-12",
@@ -63,7 +63,7 @@ export const BackgroundBeamsWithCollision = ({
     {
       initialX: 1200,
       translateX: 1200,
-      translateY:"7465px",
+      translateY:"7610px",
       duration: 6,
       repeatDelay: 4,
       delay: 2,
