@@ -102,7 +102,7 @@ export default function SkillsSection() {
             >
                 <div className="md:col-span-3 lg:col-span-4">
                     <h2 className="text-3xl font-bold tracking-tight">Skills</h2>
-                    <p className="text-muted-foreground mt-2">Some of the skills I've learned.</p>
+                    <p className="text-muted-foreground mt-2">Some of the skills I&apos;ve learned.</p>
                 </div>
             {/* First row - 4 equal cards */}
             <div className="md:col-span-3 lg:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-4">
