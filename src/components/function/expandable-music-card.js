@@ -272,7 +272,7 @@ const cards = [
     {
         description: "2000年发行",
         title: "Jay",
-        src: "./Jay.png?height=300&width=300",
+        src: "/jay.png?height=300&width=300",
         audioSrc: "/jay.mp3", // 替换为实际音频文件
         content: () => {
             return (
