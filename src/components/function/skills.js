@@ -13,6 +13,7 @@ const styles = `
   }
 `;
 export default function SkillsSection() {
+
     const skills = [
         {
             name: "golang",
@@ -99,6 +100,10 @@ export default function SkillsSection() {
                     isVisible ? "animate-fadeInUp" : "opacity-0 translate-y-25 scale-80"
                 } transition-all duration-2000 ease-out`}
             >
+                <div className="md:col-span-3 lg:col-span-4">
+                    <h2 className="text-3xl font-bold tracking-tight">Skills</h2>
+                    <p className="text-muted-foreground mt-2">Some of the skills I've learned.</p>
+                </div>
             {/* First row - 4 equal cards */}
             <div className="md:col-span-3 lg:col-span-4 grid grid-cols-1 md:grid-cols-4 gap-4">
                 {skills.slice(0, 4).map((skill, index) => (

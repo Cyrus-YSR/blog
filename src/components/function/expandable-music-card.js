@@ -176,6 +176,17 @@ export default function ExpandableCardDemo() {
                     </div>
                 ) : null}
             </AnimatePresence>
+            <motion.div
+                variants={cardVariants}
+                initial="hidden"
+                animate={isVisible ? "visible" : "hidden"}
+                className="w-full max-w-6xl mx-auto px-4 text-left"
+            >
+                <div className="text-left">
+                    <h2 className="text-3xl font-bold tracking-tight">Albums</h2>
+                    <p className="text-muted-foreground mt-2">Some of my favorite singles</p>
+                </div>
+            </motion.div>
             <motion.ul
                 ref={sectionRef}
                 variants={cardVariants}
